@@ -1,0 +1,71 @@
+form {
+  display: inline-block;
+}
+
+form input[type="submit"], form button {
+  font-size: 18px;    /* Makes the text larger */
+  padding: 12px 24px; /* Adds space inside the button (top/bottom left/right) */
+  cursor: pointer;    /* Makes it look clickable */
+}
+
+.Centered-section{	
+				text-align: center;
+				background-color: #E60012;
+				color: white;
+				font-family: sans-serif;
+}
+				
+h1 {
+	font-size:100pt;
+}
+
+h2 {
+	font-size:50pt;
+}
+
+h3 {
+	font-size:40pt;
+}
+
+h4 {
+	font-size:25pt;
+}
+
+ul {
+  list-style: none;     /* 1. Hide default bullets */
+  padding-left: 0;      /* 2. Clear default spacing */
+  margin: 0;
+  
+  /*This centers all text blocks on the page directly */
+  text-align: center;   
+}
+
+ul li {
+  /*Display: inline-block forces the line to only take up the width of its text */
+  display: inline-block;
+  width: 100%;
+  
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+ul li::before {
+  content: "🎮";         /* 3. Insert your custom symbol here */
+  color: #ffcc00;       /* Styles text symbols if you aren't using color emojis */
+  
+  /*Gives the emoji spacing directly to the left of the centered text string */
+  margin-right: 8px;    
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside; /* Pulls the numbers out of the margin into the center */
+  padding: 0;                  /* Removes the default left padding that shifts the list */
+}
+
+a {
+    color: #0d0c0c; /* Changes link color to a vibrant coral orange */
+}
+
+
